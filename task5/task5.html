@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <title>Title</title>
+    <style type="text/css">
+        @media(max-width: 420px){
+        html{
+            font-size: 10px;
+            }
+        }
+        body{margin: 0;padding: 0}
+        *{font-weight: bold}
+        .header{
+            background:#5fc0cd;
+            text-align: center;
+            padding: 2% 0;
+            font-size: 2rem;
+            color: #ffffff;
+            width: 100%;
+        }
+        .back{
+            margin-left: 2%;
+            position: absolute;
+            width: 2.3rem;
+            height: 2.3rem;
+            background:url(150%25%20返回.png) no-repeat ;
+            background-size:contain;
+        }
+
+        .introduction{
+            background: url(bjing.png) no-repeat ;
+            background-size:100% 100%;
+            width: 100% ;
+        }
+        .photo1{
+            padding: 5% 0;
+            margin:0 5%;
+            width:20%;
+            height:20%;
+            float:left ;
+        }
+        .photo1 img{
+            width:100%;
+            height:100%;
+        }
+        .photoR{
+            width: 70%;
+            float:left;
+        }
+        .up{
+            padding: 15% 0 0 0;
+            margin: 0;
+            color: #ffffff;
+        }
+        .up .name{
+            font-size: 3rem;
+        }
+        .up .age{
+            font-size: 2.5rem;
+        }
+        .down{
+            font-size:1.5rem;
+            background: url("Shape%204.png") no-repeat  ;
+            background-size:auto 100% ;
+            color: #ffffff;
+        }
+        .ability{
+            margin: 2% 5%;
+            font-size: 2rem;
+            border-left:solid thick #5fc0cd ;
+        }
+        ul{
+            list-style: none;
+           padding-left:10%;
+            margin-bottom:20%;
+            font-size: 2rem;
+            border-top:solid;
+            border-bottom: solid;
+            border-color: #eff0f4;
+        }
+        li{
+            padding: 3% 0;
+            border-bottom:solid #eff0f4;
+        }
+        .content1{
+            color: #b3b3b3;
+            float: left;
+            padding-right:5% ;
+            margin-right:5% ;
+            border-right: solid #eff0f4;
+
+        }
+        .content2{
+            color: red;
+        }
+        .content3{
+            border: none;
+            overflow: hidden;
+        }
+        .content4{
+            display: inline;
+            float: left;
+            width:60%;
+            font-size: 1.5rem;
+        }
+        .content5{
+            background: url("形状%204%20拷贝%204.png")no-repeat 0 45% ;
+            background-size: 1.5rem 1.5rem;
+            display: inline-block;
+            padding:0 2rem 0 2rem ;
+        }
+        .content6{
+            background: url("形状%204%20拷贝%204.png")no-repeat 0 45% ;
+            background-size: 1.5rem 1.5rem;
+            display: inline-block;
+            padding-left: 2rem;
+        }
+        .footer{
+            margin:10% 4% 4% 4%;
+            width:92%;
+            position: fixed;
+            bottom: 0;
+            overflow: hidden;
+        }
+        .message{
+            float: left;
+            padding:3% 10%;
+            font-size: 2rem;
+            border: solid #5fc0cd;
+            border-radius:0.5rem;
+            transition-duration: 0.4s;
+        }
+        .telephone{
+            float: right;
+            padding:3% 10%;
+            font-size: 2rem;
+            border: solid #5fc0cd;
+            border-radius:0.5rem;
+
+        }
+        .message1{
+
+            color:#5fc0cd;
+            background-color:#ffffff ;
+
+        }
+        .message1:hover{
+            background-color: #5fc0cd;
+            color: white;
+        }
+        .telephone1{
+            color:#5fc0cd;
+            background-color: #ffffff;
+        }
+        .telephone1:hover{
+            color: white;
+            background-color: #5fc0cd;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="back">
+    </div>
+    个人主页
+</div>
+<div class="introduction">
+    <div class="photo1">
+        <img src="图层%201.png" >
+    </div>
+    <div class="photoR">
+        <p class="up">
+            <span class="name">高素雅</span>
+            <span class="age">&emsp;51岁</span>
+        </p>
+        <p class="down">&nbsp;北京·通州·果园</p>
+    </div>
+    <div style="clear: both"></div>
+</div>
+<div class="ability">&nbsp;专业技能</div>
+<ul>
+    <li>
+        <div class="content5">住家</div>
+        <div class="content6">不含餐</div>
+    </li>
+    <li><span class="content1">从业年限</span><span>0—3</span></li>
+    <li><span class="content1">工作时间</span><span>全天</span></li>
+    <li><span class="content1">服务价格</span><span class=content2>25元/小时</span></li>
+    <li class="content3"><div class="content1">自我介绍</div><div class="content4">可以洗衣、做饭、照顾老人。在护工方面有5年经验，经验丰富</div></li>
+</ul>
+<div class="footer">
+    <button class="message message1">&emsp;留言&emsp;</button>
+    <button class="telephone telephone1"> 电话联系</button>
+</div>
+</body>
+</html>
