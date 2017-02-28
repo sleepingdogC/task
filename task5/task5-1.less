@@ -1,0 +1,130 @@
+.content-font(@color:#000){
+  font-size: 20px;
+  color:@color;
+}
+.content-li(@padding-left:20px,@margin-left:20px){
+  padding-left: @padding-left;
+  border-bottom:3px solid #eff0f4;
+  margin-left: @margin-left;
+  padding-top:20px;
+  padding-bottom:20px ;
+}
+.delimiter(@background-color:#eff0f4){
+  display: inline-block;
+  width: 3px;
+  height:20px;
+  background-color:@background-color;
+  vertical-align: -10%;
+  margin: 0 20px;
+}
+.button-style(@float:left){
+  width: 45%;
+  height:100%;
+  font-size: 20px;
+  border: solid #5fc0cd;
+  border-radius:5px;
+  transition-duration: 0.4s;
+  background-color: #fff;
+  color: #5fc0cd;
+  float: @float;
+  &:hover{
+    color: #fff;
+    background-color:#5fc0cd ;
+  }
+}
+header{
+  text-align: center;
+  background-color:#5fc0cd ;
+  height:50px;
+  line-height: 50px;
+  font-size: 30px;
+  color: #fff;
+  a{
+    margin-left: 20px;
+    img{
+      width:20px;
+      height:100%;
+    }
+  }
+}
+.introduction {
+  background: url(bjing.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  .introduction-L{
+    display: inline-block;
+    padding: 5% 0;
+    margin:0 5%;
+    width:20%;
+  }
+  img{
+    width:100%
+
+  }
+  .introduction-R{
+    display: inline-block;
+    vertical-align: middle;
+    .introduction-R-U{
+      margin: 0;
+      color: #ffffff;
+    }
+    .name{
+      font-size: 30px;
+    }
+    .age{
+      font-size:25px;
+    }
+    .introduction-R-D{
+      font-size:20px;
+      background: url("Shape%204.png") no-repeat;
+      background-size:auto 100% ;
+      color: #ffffff;
+      padding-left: 20px;
+    }
+  }
+}
+.content{
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .content-li-up{
+      .content-li(20px,0)
+    }
+    .content-li-normal{
+      .content-li;
+      img{
+        width:20px;
+      }
+    }
+    .content-li-down{
+      .content-li(40px,0px);
+      }
+    }
+    .content-font-normal{
+      .content-font
+    }
+    .content-font-grey {
+      .content-font(#b3b3b3)
+    }
+    .content-font-red {
+      .content-font(red)
+    }
+    .delimiter-blue{
+        .delimiter(#5fc0cd)
+    }
+    .delimiter-grey{
+        .delimiter;
+    }
+  }
+footer{
+  height:60px;
+  margin-top: 50px;
+  .message{
+    .button-style;
+  }
+  .tel{
+    .button-style(right);
+  }
+}
